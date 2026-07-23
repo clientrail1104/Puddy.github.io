@@ -1,12 +1,12 @@
 window.addEventListener(
 "scroll",
-function(){
+()=>{
 
-let title=document.querySelector(".hero h1");
+let device =
+document.querySelector(".device");
 
-let position=window.scrollY;
 
-title.style.transform=
-`translateY(${position*0.3}px)`;
+device.style.transform =
+`rotateY(${window.scrollY/20}deg)`;
 
 });
